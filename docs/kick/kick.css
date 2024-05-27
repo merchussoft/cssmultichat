@@ -37,5 +37,29 @@ body {
    background: #111;
    border: 1px solid #00ff00;
    white-space: pre-wrap;
-   
+   bottom: 10px;
+   left: 10px;
+   width: 96%;
+   display: block!important;
+   font-family:monospace;
+   box-sizing: border-box;
+}
+
+.chat_line{
+    display:block;
+}
+.colon{
+    display:none;
+}
+
+.chat_line {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #004400;
+        color: #00ff00;
+}
+
+.user-info {
+
 }

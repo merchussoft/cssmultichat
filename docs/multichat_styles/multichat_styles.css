@@ -1,8 +1,8 @@
 body {
-	background-color: pink;
+	background-color: pink !important;
 }
 
 
 .ScCoreButtonPrimary-sc-ocjdkq-1 {
-	font-size: 30px;
+	font-size: 30px !important;
 }

@@ -48,6 +48,9 @@ body {
 .user-info {
     display: flex;
     align-items: center;
+    padding: 10px;
+    background-color: #004400;
+    color: #00FF00;
 }
 
 
@@ -73,4 +76,7 @@ body {
     padding: 10px;
     overflow-y: auto;
     background-color: #000000;
+    background-color: #003300;
+    align-self: flex-start;
+    color: #00FF00;
 }

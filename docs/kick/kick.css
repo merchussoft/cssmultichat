@@ -6,94 +6,90 @@
 }
 
 body {
+    background: rgb(24, 23, 28);
+    font-family: "Open Sans", sans-serif !important;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    background-color: #000000;
-    color: #00FF00;
 }
 
-
 #chat-container {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 600px;
+    height: 100%;
+    box-sizing: border-box;
     border: 1px solid #00FF00;
     border-radius: 10px;
-    background-color: #000000;
     overflow: hidden;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+#chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
 }
 
 #loading {
-   color: #00FF00;
-   position: absolute;
-   padding: 5px;
-   font-size: 10px;
-   background: #111;
-   border: 1px solid #00ff00;
-   white-space: pre-wrap;
-   bottom: 10px;
-   left: 10px;
-   width: 96%;
-   display: block!important;
-   font-family:monospace;
-   box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #00FF00;
+    color: #00FF00;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
 }
 
+.chat_line {
+    margin-bottom: 20px;
+}
 
-.user-info {
+.user_info {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
-    background-color: #004400;
     color: #00FF00;
+    width: 100%;
 }
 
+.user_info .badges {
+    display: flex;
+}
 
-.badges img{
-    width: 20px;
-    height: 20px;
+.badges img {
+    margin: 0 2px 0 0;
+    display: block;
     border-radius: 50%;
-    margin-right: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .username {
-   font-weight: bold;
-    margin-right: 10px;
+    color: #00FF00 !important;
+    margin-left: 2px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.message_content {
+    background: #004400;
+    border: 1px solid #222;
+    border-radius: 10px;
+    display: block;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-left: 30px;
+    margin-top: 5px;
+    color: #00FF00;
 }
 
 .colon {
     display: none;
-}
-
-.message_content {
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    background-color: #000000;
-    align-self: flex-start;
-    color: #00FF00;
-}
-
-
-.message-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.message-header .avatar {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-
-.message-header .username {
-    font-weight: bold;
-    margin-right: 10px;
 }
